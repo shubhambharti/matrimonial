@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/style/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-expand-xl navbar-dark">
+        <div class="navbar-header me-3">
+            <a class="navbar-brand" href="#"><i class="fas fa-cubes fa-2x me-3"
+                    style="color: #ff6219;"></i>Brand<b>Name</b></a>
+
+        </div>
+        <div style="margin-left:15rem; margin-right: 15rem;"></div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse ms-3">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="#"><i class="fa fa-search"></i><span>Search</span></a></li>
+                <li><a href="#"><i class="fa fa-star"></i><span>Membership</span></a></li>
+                <li><a href="#"><i class="fa fa-users"></i><span>Team</span></a></li>
+                <li><a href="#"><i class="fa fa-heart"></i><span>Success Stories</span></a></li>
+                <li><a href="#"><i class="fa fa-briefcase"></i><span>Careers</span></a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i><span>Messages</span></a></li>
+                <li><a href="#"><i class="fa fa-bell"></i><span>Notifications</span></a></li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle user-action"><img
+                            src="https://www.tutorialrepublic.com/examples/images/avatar/3.jpg" class="avatar"
+                            alt="Avatar"> User-1</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-user-o"></i> Profile</a></li>
+                        <li><a href="#"><i class="fa fa-sliders"></i> Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="material-icons">&#xE8AC;</i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="banner-agile">
+        <div class="banner-text-posi-w3ls" style="user-select: auto;">
+            <div class="banner-text-wh" style="user-select: auto;">
+                <div class="about py-5" style="user-select: auto;">
+                    <div class="row" style="margin-left: -50px; user-select: auto;">
+                        <div class="text-center" style="user-select: auto;">
+                            <div class="formwrapper" style="user-select: auto;">
+                                <div class="col-md-12 py-3 px-0" style="user-select: auto;">
+                                    <form action="search-result.php?page=1" class="form-inline" method="post"
+                                        style="user-select: auto;">
+                                        <div class="styled-input form-group col-md-2" style="user-select: auto;">
+                                            <label class="label" for="lookingfor" style="user-select: auto;"><span
+                                                    class="search" style="user-select: auto;">I'm looking for
+                                                    a</span></label>
+                                            <select class="category2" name="gender" selected=""
+                                                style="user-select: auto;">
+                                                <!-- <option value="Select" selected>Looking For</option> -->
+                                                <option value="Male" style="user-select: auto;">Groom</option>
+                                                <option value="Female" selected="" style="user-select: auto;">Bride
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="styled-input form-group col-md-2" style="user-select: auto;">
+                                            <label class="label" for="lookingfor" style="user-select: auto;"><span
+                                                    style="color: rgb(255, 255, 255); user-select: auto;"
+                                                    class="search">Age from</span></label>
+                                            <select class="category2" value="Select" name="txtSAge" required=""
+                                                style="user-select: auto;">
+                                                <!--   <option value="Select" selected>Select Age</option> -->
+                                                <option value="18" style="user-select: auto;">18</option>
+                                                <option value="19" style="user-select: auto;">19</option>
+                                                <option value="20" selected="" style="user-select: auto;">20</option>
+                                                <option value="21" style="user-select: auto;">21</option>
+                                                <option value="22" style="user-select: auto;">22</option>
+                                                <option value="23" style="user-select: auto;">23</option>
+                                                <option value="24" style="user-select: auto;">24</option>
+                                                <option value="25" style="user-select: auto;">25</option>
+                                                <option value="26" style="user-select: auto;">26</option>
+                                                <option value="27" style="user-select: auto;">27</option>
+                                                <option value="28" style="user-select: auto;">28</option>
+                                                <option value="29" style="user-select: auto;">29</option>
+                                                <option value="30" style="user-select: auto;">30</option>
+                                                <option value="31" style="user-select: auto;">31</option>
+                                                <option value="32" style="user-select: auto;">32</option>
+                                                <option value="33" style="user-select: auto;">33</option>
+                                                <option value="34" style="user-select: auto;">34</option>
+                                                <option value="35" style="user-select: auto;">35</option>
+                                                <option value="36" style="user-select: auto;">36</option>
+                                                <option value="37" style="user-select: auto;">37</option>
+                                                <option value="38" style="user-select: auto;">38</option>
+                                                <option value="39" style="user-select: auto;">39</option>
+                                                <option value="40" style="user-select: auto;">40</option>
+                                                <option value="41" style="user-select: auto;">41</option>
+                                                <option value="42" style="user-select: auto;">42</option>
+                                                <option value="43" style="user-select: auto;">43</option>
+                                                <option value="44" style="user-select: auto;">44</option>
+                                                <option value="45" style="user-select: auto;">45</option>
+                                                <option value="46" style="user-select: auto;">46</option>
+                                                <option value="47" style="user-select: auto;">47</option>
+                                                <option value="48" style="user-select: auto;">48</option>
+                                                <option value="49" style="user-select: auto;">49</option>
+                                                <option value="50" style="user-select: auto;">50</option>
+                                                <option value="51" style="user-select: auto;">51</option>
+                                                <option value="52" style="user-select: auto;">52</option>
+                                                <option value="53" style="user-select: auto;">53</option>
+                                                <option value="54" style="user-select: auto;">54</option>
+                                                <option value="55" style="user-select: auto;">55</option>
+                                                <option value="56" style="user-select: auto;">56</option>
+                                                <option value="57" style="user-select: auto;">57</option>
+                                                <option value="58" style="user-select: auto;">58</option>
+                                                <option value="59" style="user-select: auto;">59</option>
+                                                <option value="60" style="user-select: auto;">60</option>
+                                                <option value="61" style="user-select: auto;">61</option>
+                                                <option value="62" style="user-select: auto;">62</option>
+                                                <option value="63" style="user-select: auto;">63</option>
+                                                <option value="64" style="user-select: auto;">64</option>
+                                                <option value="65" style="user-select: auto;">65</option>
+                                            </select>
+
+                                        </div>
+
+                                        <div class="styled-input form-group col-md-2" style="user-select: auto;">
+                                            <label class="label" for="lookingfor" style="user-select: auto;"><span
+                                                    style="color: rgb(255, 255, 255); user-select: auto;"
+                                                    class="search">Age to</span></label>
+                                            <select class="category2" value="Select" name="txtEAge" required=""
+                                                style="user-select: auto;">
+                                                <!--  <option value="Select" selected>To Age</option> -->
+                                                <option value="18" style="user-select: auto;">18</option>
+                                                <option value="19" style="user-select: auto;">19</option>
+                                                <option value="20" style="user-select: auto;">20</option>
+                                                <option value="21" style="user-select: auto;">21</option>
+                                                <option value="22" style="user-select: auto;">22</option>
+                                                <option value="23" style="user-select: auto;">23</option>
+                                                <option value="24" style="user-select: auto;">24</option>
+                                                <option value="25" style="user-select: auto;">25</option>
+                                                <option value="26" style="user-select: auto;">26</option>
+                                                <option value="27" style="user-select: auto;">27</option>
+                                                <option value="28" selected="" style="user-select: auto;">28</option>
+                                                <option value="29" style="user-select: auto;">29</option>
+                                                <option value="30" style="user-select: auto;">30</option>
+                                                <option value="31" style="user-select: auto;">31</option>
+                                                <option value="32" style="user-select: auto;">32</option>
+                                                <option value="33" style="user-select: auto;">33</option>
+                                                <option value="34" style="user-select: auto;">34</option>
+                                                <option value="35" style="user-select: auto;">35</option>
+                                                <option value="36" style="user-select: auto;">36</option>
+                                                <option value="37" style="user-select: auto;">37</option>
+                                                <option value="38" style="user-select: auto;">38</option>
+                                                <option value="39" style="user-select: auto;">39</option>
+                                                <option value="40" style="user-select: auto;">40</option>
+                                                <option value="41" style="user-select: auto;">41</option>
+                                                <option value="42" style="user-select: auto;">42</option>
+                                                <option value="43" style="user-select: auto;">43</option>
+                                                <option value="44" style="user-select: auto;">44</option>
+                                                <option value="45" style="user-select: auto;">45</option>
+                                                <option value="46" style="user-select: auto;">46</option>
+                                                <option value="47" style="user-select: auto;">47</option>
+                                                <option value="48" style="user-select: auto;">48</option>
+                                                <option value="49" style="user-select: auto;">49</option>
+                                                <option value="50" style="user-select: auto;">50</option>
+                                                <option value="51" style="user-select: auto;">51</option>
+                                                <option value="52" style="user-select: auto;">52</option>
+                                                <option value="53" style="user-select: auto;">53</option>
+                                                <option value="54" style="user-select: auto;">54</option>
+                                                <option value="55" style="user-select: auto;">55</option>
+                                                <option value="56" style="user-select: auto;">56</option>
+                                                <option value="57" style="user-select: auto;">57</option>
+                                                <option value="58" style="user-select: auto;">58</option>
+                                                <option value="59" style="user-select: auto;">59</option>
+                                                <option value="60" style="user-select: auto;">60</option>
+                                                <option value="61" style="user-select: auto;">61</option>
+                                                <option value="62" style="user-select: auto;">62</option>
+                                                <option value="63" style="user-select: auto;">63</option>
+                                                <option value="64" style="user-select: auto;">64</option>
+                                                <option value="65" style="user-select: auto;">65</option>
+                                            </select>
+                                        </div>
+                                        <div class="styled-input agile-styled-input-top form-group col-md-2"
+                                            style="user-select: auto;">
+                                            <label class="label" for="lookingfor" style="user-select: auto;"><span
+                                                    class="search"
+                                                    style="color: rgb(255, 255, 255); user-select: auto;">of
+                                                    Religion</span></label>
+                                            <select class="category2" value="Select" name="religion" id="religion"
+                                                onchange="fillcaste(this.value)" required="" style="user-select: auto;">
+                                                <option value="Any" selected="" style="user-select: auto;">Any</option>
+                                                <option value="Hindu" style="user-select: auto;">Hindu</option>
+                                                <option value="JAIN" style="user-select: auto;">JAIN</option>
+                                            </select>
+                                            <span style="user-select: auto;"></span>
+                                        </div>
+                                        <div class="styled-input agile-styled-input-top form-group col-md-2"
+                                            style="user-select: auto;">
+                                            <label class="label" for="lookingfor" style="user-select: auto;"><span
+                                                    class="search"
+                                                    style="color: rgb(255, 255, 255); user-select: auto;">and
+                                                    Caste</span></label>
+
+
+                                            <select class="category2" name="caste" id="caste" required="" tabindex="14"
+                                                style="user-select: auto;">
+
+                                                <option value="Any" selected="" style="user-select: auto;">Any</option>
+                                                <option value="Khatri" style="user-select: auto;">Khatri</option>
+                                                <option value="Maratha" style="user-select: auto;">Maratha</option>
+                                                <option value="Arora" style="user-select: auto;">Arora</option>
+                                                <option value="Scheduled Caste" style="user-select: auto;">Scheduled
+                                                    Caste</option>
+                                                <option value="Yadav" style="user-select: auto;">Yadav</option>
+                                                <option value="Punjabi" style="user-select: auto;">Punjabi</option>
+                                                <option value="Bengali" style="user-select: auto;">Bengali</option>
+                                                <option value="Nair" style="user-select: auto;">Nair</option>
+                                                <option value="Kshatriya" style="user-select: auto;">Kshatriya</option>
+                                                <option value="Gupta" style="user-select: auto;">Gupta</option>
+                                                <option value="Jat" style="user-select: auto;">Jat</option>
+                                                <option value="96K Kokanastha" style="user-select: auto;">96K Kokanastha
+                                                </option>
+                                                <option value="Ad Dharmi" style="user-select: auto;">Ad Dharmi</option>
+                                                <option value="Adi Andhra" style="user-select: auto;">Adi Andhra
+                                                </option>
+                                                <option value="Adi Dravida" style="user-select: auto;">Adi Dravida
+                                                </option>
+                                                <option value="Adi Karnataka" style="user-select: auto;">Adi Karnataka
+                                                </option>
+                                                <option value="Agnikula Kshatriya" style="user-select: auto;">Agnikula
+                                                    Kshatriya</option>
+                                                <option value="Agri" style="user-select: auto;">Agri</option>
+                                                <option value="Ahom" style="user-select: auto;">Ahom</option>
+                                                <option value="Ambalavasi" style="user-select: auto;">Ambalavasi
+                                                </option>
+                                                <option value="Amil Sindhi" style="user-select: auto;">Amil Sindhi
+                                                </option>
+                                                <option value="Anglo Indian" style="user-select: auto;">Anglo Indian
+                                                </option>
+                                                <option value="Araya" style="user-select: auto;">Araya</option>
+                                                <option value="Arekatica" style="user-select: auto;">Arekatica</option>
+                                                <option value="Arunthathiyar" style="user-select: auto;">Arunthathiyar
+                                                </option>
+                                                <option value="Arya Vysya" style="user-select: auto;">Arya Vysya
+                                                </option>
+                                                <option value="Aryasamaj" style="user-select: auto;">Aryasamaj</option>
+                                                <option value="Ayyaraka" style="user-select: auto;">Ayyaraka</option>
+                                                <option value="Badaga" style="user-select: auto;">Badaga</option>
+                                                <option value="Bahi" style="user-select: auto;">Bahi</option>
+                                                <option value="Baibhand Sindhi" style="user-select: auto;">Baibhand
+                                                    Sindhi</option>
+                                                <option value="Baidya" style="user-select: auto;">Baidya</option>
+                                                <option value="Baishnab" style="user-select: auto;">Baishnab</option>
+                                                <option value="Baishya" style="user-select: auto;">Baishya</option>
+                                                <option value="Balija" style="user-select: auto;">Balija</option>
+                                                <option value="Banik" style="user-select: auto;">Banik</option>
+                                                <option value="Baniya" style="user-select: auto;">Baniya</option>
+                                                <option value="Banjara" style="user-select: auto;">Banjara</option>
+                                                <option value="Barai" style="user-select: auto;">Barai</option>
+                                                <option value="Bari" style="user-select: auto;">Bari</option>
+                                                <option value="Barujibi" style="user-select: auto;">Barujibi</option>
+                                                <option value="Besta" style="user-select: auto;">Besta</option>
+                                                <option value="Bhandari" style="user-select: auto;">Bhandari</option>
+                                                <option value="Bhanusali Sindhi" style="user-select: auto;">Bhanusali
+                                                    Sindhi</option>
+                                                <option value="Bhatia" style="user-select: auto;">Bhatia</option>
+                                                <option value="Bhatia Sindhi" style="user-select: auto;">Bhatia Sindhi
+                                                </option>
+                                                <option value="Bhatraju" style="user-select: auto;">Bhatraju</option>
+                                                <option value="Bhavasar Kshatriya" style="user-select: auto;">Bhavasar
+                                                    Kshatriya</option>
+                                                <option value="Bhavsar" style="user-select: auto;">Bhavsar</option>
+                                                <option value="Bhovi" style="user-select: auto;">Bhovi</option>
+                                                <option value="Bhumihar Brahmin" style="user-select: auto;">Bhumihar
+                                                    Brahmin</option>
+                                                <option value="Billava" style="user-select: auto;">Billava</option>
+                                                <option value="Bishnoi/Vishnoi" style="user-select: auto;">
+                                                    Bishnoi/Vishnoi</option>
+                                                <option value="Boyer" style="user-select: auto;">Boyer</option>
+                                                <option value="Brahmbatt" style="user-select: auto;">Brahmbatt</option>
+                                                <option value="Bunt" style="user-select: auto;">Bunt</option>
+                                                <option value="Bunt (Shetty)" style="user-select: auto;">Bunt (Shetty)
+                                                </option>
+                                                <option value="Chambhar" style="user-select: auto;">Chambhar</option>
+                                                <option value="Chandraseniya Kayastha Prab" style="user-select: auto;">
+                                                    Chandraseniya Kayastha Prab</option>
+                                                <option value="Chandravanshi Kahar" style="user-select: auto;">
+                                                    Chandravanshi Kahar</option>
+                                                <option value="Chasa" style="user-select: auto;">Chasa</option>
+                                                <option value="Chattada Sri Vaishnava" style="user-select: auto;">
+                                                    Chattada Sri Vaishnava</option>
+                                                <option value="Chaudary" style="user-select: auto;">Chaudary</option>
+                                                <option value="Chaurasia" style="user-select: auto;">Chaurasia</option>
+                                                <option value="Chettiar" style="user-select: auto;">Chettiar</option>
+                                                <option value="Chhapru Sindhi" style="user-select: auto;">Chhapru Sindhi
+                                                </option>
+                                                <option value="Chhetri" style="user-select: auto;">Chhetri</option>
+                                                <option value="Chippolu (Mera)" style="user-select: auto;">Chippolu
+                                                    (Mera)</option>
+                                                <option value="CKP" style="user-select: auto;">CKP</option>
+                                                <option value="Coorgi" style="user-select: auto;">Coorgi</option>
+                                                <option value="Dadu Sindhi" style="user-select: auto;">Dadu Sindhi
+                                                </option>
+                                                <option value="Darji" style="user-select: auto;">Darji</option>
+                                                <option value="Dawoodi Bhora" style="user-select: auto;">Dawoodi Bhora
+                                                </option>
+                                                <option value="Devadiga" style="user-select: auto;">Devadiga</option>
+                                                <option value="Devandra Kula Vellalar" style="user-select: auto;">
+                                                    Devandra Kula Vellalar</option>
+                                                <option value="Devang Koshthi" style="user-select: auto;">Devang Koshthi
+                                                </option>
+                                                <option value="Devanga" style="user-select: auto;">Devanga</option>
+                                                <option value="Devar/Thevar/Mukkulathor" style="user-select: auto;">
+                                                    Devar/Thevar/Mukkulathor</option>
+                                                <option value="Devendra Kula Vellalar" style="user-select: auto;">
+                                                    Devendra Kula Vellalar</option>
+                                                <option value="Dhaneshawat Vaish" style="user-select: auto;">Dhaneshawat
+                                                    Vaish</option>
+                                                <option value="Dhangar" style="user-select: auto;">Dhangar</option>
+                                                <option value="Dheevara" style="user-select: auto;">Dheevara</option>
+                                                <option value="Dhiman" style="user-select: auto;">Dhiman</option>
+                                                <option value="Dhoba" style="user-select: auto;">Dhoba</option>
+                                                <option value="Dhobi" style="user-select: auto;">Dhobi</option>
+                                                <option value="Dumal" style="user-select: auto;">Dumal</option>
+                                                <option value="Dusadh (Paswan)" style="user-select: auto;">Dusadh
+                                                    (Paswan)</option>
+                                                <option value="Ediga" style="user-select: auto;">Ediga</option>
+                                                <option value="Ezhava" style="user-select: auto;">Ezhava</option>
+                                                <option value="Ezhuthachan" style="user-select: auto;">Ezhuthachan
+                                                </option>
+                                                <option value="Gabit" style="user-select: auto;">Gabit</option>
+                                                <option value="Ganda" style="user-select: auto;">Ganda</option>
+                                                <option value="Gandla" style="user-select: auto;">Gandla</option>
+                                                <option value="Ganiga" style="user-select: auto;">Ganiga</option>
+                                                <option value="Ganigashetty" style="user-select: auto;">Ganigashetty
+                                                </option>
+                                                <option value="Garhwali" style="user-select: auto;">Garhwali</option>
+                                                <option value="Garhwali Rajput" style="user-select: auto;">Garhwali
+                                                    Rajput</option>
+                                                <option value="Gavali" style="user-select: auto;">Gavali</option>
+                                                <option value="Gavara" style="user-select: auto;">Gavara</option>
+                                                <option value="Gawali" style="user-select: auto;">Gawali</option>
+                                                <option value="Ghisadi" style="user-select: auto;">Ghisadi</option>
+                                                <option value="Ghumar" style="user-select: auto;">Ghumar</option>
+                                                <option value="Goala" style="user-select: auto;">Goala</option>
+                                                <option value="Goan" style="user-select: auto;">Goan</option>
+                                                <option value="Gomantak" style="user-select: auto;">Gomantak</option>
+                                                <option value="Gomantak Maratha" style="user-select: auto;">Gomantak
+                                                    Maratha</option>
+                                                <option value="Gondhali" style="user-select: auto;">Gondhali</option>
+                                                <option value="Goswami" style="user-select: auto;">Goswami</option>
+                                                <option value="Goswami/Gosavi Brahmin" style="user-select: auto;">
+                                                    Goswami/Gosavi Brahmin</option>
+                                                <option value="Goud" style="user-select: auto;">Goud</option>
+                                                <option value="Gounder" style="user-select: auto;">Gounder</option>
+                                                <option value="Gowda" style="user-select: auto;">Gowda</option>
+                                                <option value="Gramani" style="user-select: auto;">Gramani</option>
+                                                <option value="Gudia" style="user-select: auto;">Gudia</option>
+                                                <option value="Gujarati" style="user-select: auto;">Gujarati</option>
+                                                <option value="Gujjar" style="user-select: auto;">Gujjar</option>
+                                                <option value="Guptan" style="user-select: auto;">Guptan</option>
+                                                <option value="Gurav" style="user-select: auto;">Gurav</option>
+                                                <option value="Gurjar" style="user-select: auto;">Gurjar</option>
+                                                <option value="Hegde" style="user-select: auto;">Hegde</option>
+                                                <option value="Himachali" style="user-select: auto;">Himachali</option>
+                                                <option value="Hindu-Others" style="user-select: auto;">Hindu-Others
+                                                </option>
+                                                <option value="Hugar (Jeer)" style="user-select: auto;">Hugar (Jeer)
+                                                </option>
+                                                <option value="Hyderabadi Sindhi" style="user-select: auto;">Hyderabadi
+                                                    Sindhi</option>
+                                                <option value="Intercaste" style="user-select: auto;">Intercaste
+                                                </option>
+                                                <option value="Irani" style="user-select: auto;">Irani</option>
+                                                <option value="Iyengar" style="user-select: auto;">Iyengar</option>
+                                                <option value="Iyer" style="user-select: auto;">Iyer</option>
+                                                <option value="Jaalari" style="user-select: auto;">Jaalari</option>
+                                                <option value="Jaiswal" style="user-select: auto;">Jaiswal</option>
+                                                <option value="Jandra" style="user-select: auto;">Jandra</option>
+                                                <option value="Jangam" style="user-select: auto;">Jangam</option>
+                                                <option value="Jatav" style="user-select: auto;">Jatav</option>
+                                                <option value="Jeer" style="user-select: auto;">Jeer</option>
+                                                <option value="Jogi (Nath)" style="user-select: auto;">Jogi (Nath)
+                                                </option>
+                                                <option value="Kachara" style="user-select: auto;">Kachara</option>
+                                                <option value="Kadava Patel" style="user-select: auto;">Kadava Patel
+                                                </option>
+                                                <option value="Kahar" style="user-select: auto;">Kahar</option>
+                                                <option value="Kaibarta" style="user-select: auto;">Kaibarta</option>
+                                                <option value="Kalal" style="user-select: auto;">Kalal</option>
+                                                <option value="Kalar" style="user-select: auto;">Kalar</option>
+                                                <option value="Kalinga" style="user-select: auto;">Kalinga</option>
+                                                <option value="Kalinga Vysya" style="user-select: auto;">Kalinga Vysya
+                                                </option>
+                                                <option value="Kalita" style="user-select: auto;">Kalita</option>
+                                                <option value="Kalwar" style="user-select: auto;">Kalwar</option>
+                                                <option value="Kamboj" style="user-select: auto;">Kamboj</option>
+                                                <option value="Kamma" style="user-select: auto;">Kamma</option>
+                                                <option value="Kannada Mogaveera" style="user-select: auto;">Kannada
+                                                    Mogaveera</option>
+                                                <option value="Kansari" style="user-select: auto;">Kansari</option>
+                                                <option value="Kapu" style="user-select: auto;">Kapu</option>
+                                                <option value="Kapu Naidu" style="user-select: auto;">Kapu Naidu
+                                                </option>
+                                                <option value="Karana" style="user-select: auto;">Karana</option>
+                                                <option value="Karmakar" style="user-select: auto;">Karmakar</option>
+                                                <option value="Karuneegar" style="user-select: auto;">Karuneegar
+                                                </option>
+                                                <option value="Karuneekar" style="user-select: auto;">Karuneekar
+                                                </option>
+                                                <option value="Kasar" style="user-select: auto;">Kasar</option>
+                                                <option value="Kashyap" style="user-select: auto;">Kashyap</option>
+                                                <option value="Katiya" style="user-select: auto;">Katiya</option>
+                                                <option value="Keralite" style="user-select: auto;">Keralite</option>
+                                                <option value="Khandayat" style="user-select: auto;">Khandayat</option>
+                                                <option value="Khandelwal" style="user-select: auto;">Khandelwal
+                                                </option>
+                                                <option value="Kharwar" style="user-select: auto;">Kharwar</option>
+                                                <option value="Khatik" style="user-select: auto;">Khatik</option>
+                                                <option value="Khukhrain" style="user-select: auto;">Khukhrain</option>
+                                                <option value="Koiri" style="user-select: auto;">Koiri</option>
+                                                <option value="Kokanastha Maratha" style="user-select: auto;">Kokanastha
+                                                    Maratha</option>
+                                                <option value="Koli" style="user-select: auto;">Koli</option>
+                                                <option value="Koli Mahadev" style="user-select: auto;">Koli Mahadev
+                                                </option>
+                                                <option value="Kongu Vellala Gounder" style="user-select: auto;">Kongu
+                                                    Vellala Gounder</option>
+                                                <option value="Konkani" style="user-select: auto;">Konkani</option>
+                                                <option value="Kori" style="user-select: auto;">Kori</option>
+                                                <option value="Koshti" style="user-select: auto;">Koshti</option>
+                                                <option value="Kudumbi" style="user-select: auto;">Kudumbi</option>
+                                                <option value="Kulal" style="user-select: auto;">Kulal</option>
+                                                <option value="Kulalar" style="user-select: auto;">Kulalar</option>
+                                                <option value="Kulita" style="user-select: auto;">Kulita</option>
+                                                <option value="Kumaoni" style="user-select: auto;">Kumaoni</option>
+                                                <option value="Kumaoni Rajput" style="user-select: auto;">Kumaoni Rajput
+                                                </option>
+                                                <option value="Kumawat" style="user-select: auto;">Kumawat</option>
+                                                <option value="Kumbara" style="user-select: auto;">Kumbara</option>
+                                                <option value="Kumbhakar" style="user-select: auto;">Kumbhakar</option>
+                                                <option value="Kumbhar" style="user-select: auto;">Kumbhar</option>
+                                                <option value="Kumhar" style="user-select: auto;">Kumhar</option>
+                                                <option value="Kummari" style="user-select: auto;">Kummari</option>
+                                                <option value="Kunbi" style="user-select: auto;">Kunbi</option>
+                                                <option value="Kuravan" style="user-select: auto;">Kuravan</option>
+                                                <option value="Kurmi" style="user-select: auto;">Kurmi</option>
+                                                <option value="Kurmi Kshatriya" style="user-select: auto;">Kurmi
+                                                    Kshatriya</option>
+                                                <option value="Kuruba" style="user-select: auto;">Kuruba</option>
+                                                <option value="Kuruhina Shetty" style="user-select: auto;">Kuruhina
+                                                    Shetty</option>
+                                                <option value="Kurumbar" style="user-select: auto;">Kurumbar</option>
+                                                <option value="Kushwaha" style="user-select: auto;">Kushwaha</option>
+                                                <option value="Kushwaha (Koiri)" style="user-select: auto;">Kushwaha
+                                                    (Koiri)</option>
+                                                <option value="Kutchi" style="user-select: auto;">Kutchi</option>
+                                                <option value="Lambadi" style="user-select: auto;">Lambadi</option>
+                                                <option value="Lambani" style="user-select: auto;">Lambani</option>
+                                                <option value="Larai Sindhi" style="user-select: auto;">Larai Sindhi
+                                                </option>
+                                                <option value="Larkana Sindhi" style="user-select: auto;">Larkana Sindhi
+                                                </option>
+                                                <option value="Leva patel" style="user-select: auto;">Leva patel
+                                                </option>
+                                                <option value="Leva Patidar" style="user-select: auto;">Leva Patidar
+                                                </option>
+                                                <option value="Leva patil" style="user-select: auto;">Leva patil
+                                                </option>
+                                                <option value="Lingayath" style="user-select: auto;">Lingayath</option>
+                                                <option value="Lodhi Rajput" style="user-select: auto;">Lodhi Rajput
+                                                </option>
+                                                <option value="Lohana" style="user-select: auto;">Lohana</option>
+                                                <option value="Lohana Sindhi" style="user-select: auto;">Lohana Sindhi
+                                                </option>
+                                                <option value="Lohar" style="user-select: auto;">Lohar</option>
+                                                <option value="Lubana" style="user-select: auto;">Lubana</option>
+                                                <option value="Madiga" style="user-select: auto;">Madiga</option>
+                                                <option value="Mahajan" style="user-select: auto;">Mahajan</option>
+                                                <option value="Mahar" style="user-select: auto;">Mahar</option>
+                                                <option value="Maharashtrian" style="user-select: auto;">Maharashtrian
+                                                </option>
+                                                <option value="Mahendra" style="user-select: auto;">Mahendra</option>
+                                                <option value="Maheshwari" style="user-select: auto;">Maheshwari
+                                                </option>
+                                                <option value="Mahishya" style="user-select: auto;">Mahishya</option>
+                                                <option value="Mahisya" style="user-select: auto;">Mahisya</option>
+                                                <option value="Majabi" style="user-select: auto;">Majabi</option>
+                                                <option value="Mala" style="user-select: auto;">Mala</option>
+                                                <option value="Malayalee" style="user-select: auto;">Malayalee</option>
+                                                <option value="Malayalee Namboodiri" style="user-select: auto;">
+                                                    Malayalee Namboodiri</option>
+                                                <option value="Mali" style="user-select: auto;">Mali</option>
+                                                <option value="Mallah" style="user-select: auto;">Mallah</option>
+                                                <option value="Mangalorean" style="user-select: auto;">Mangalorean
+                                                </option>
+                                                <option value="Manipuri" style="user-select: auto;">Manipuri</option>
+                                                <option value="Mannuru Kapu" style="user-select: auto;">Mannuru Kapu
+                                                </option>
+                                                <option value="Mapila" style="user-select: auto;">Mapila</option>
+                                                <option value="Maruthuvar" style="user-select: auto;">Maruthuvar
+                                                </option>
+                                                <option value="Marvar" style="user-select: auto;">Marvar</option>
+                                                <option value="Marwari" style="user-select: auto;">Marwari</option>
+                                                <option value="Matang" style="user-select: auto;">Matang</option>
+                                                <option value="Mathur" style="user-select: auto;">Mathur</option>
+                                                <option value="Maurya" style="user-select: auto;">Maurya</option>
+                                                <option value="Meena" style="user-select: auto;">Meena</option>
+                                                <option value="Meenavar" style="user-select: auto;">Meenavar</option>
+                                                <option value="Mehra" style="user-select: auto;">Mehra</option>
+                                                <option value="Menon" style="user-select: auto;">Menon</option>
+                                                <option value="Mera" style="user-select: auto;">Mera</option>
+                                                <option value="Meru" style="user-select: auto;">Meru</option>
+                                                <option value="Meru Darji" style="user-select: auto;">Meru Darji
+                                                </option>
+                                                <option value="Mochi" style="user-select: auto;">Mochi</option>
+                                                <option value="Modak" style="user-select: auto;">Modak</option>
+                                                <option value="Mogaveera" style="user-select: auto;">Mogaveera</option>
+                                                <option value="Monchi" style="user-select: auto;">Monchi</option>
+                                                <option value="Mudaliar" style="user-select: auto;">Mudaliar</option>
+                                                <option value="Mudaliar - Senguntha" style="user-select: auto;">Mudaliar
+                                                    - Senguntha</option>
+                                                <option value="Mudaliar Arcot" style="user-select: auto;">Mudaliar Arcot
+                                                </option>
+                                                <option value="Mudaliar Saiva" style="user-select: auto;">Mudaliar Saiva
+                                                </option>
+                                                <option value="Mudaliyar" style="user-select: auto;">Mudaliyar</option>
+                                                <option value="Mudiraj" style="user-select: auto;">Mudiraj</option>
+                                                <option value="Mukkulathor" style="user-select: auto;">Mukkulathor
+                                                </option>
+                                                <option value="Mukulathur" style="user-select: auto;">Mukulathur
+                                                </option>
+                                                <option value="Munnuru Kapu" style="user-select: auto;">Munnuru Kapu
+                                                </option>
+                                                <option value="Muthuraja" style="user-select: auto;">Muthuraja</option>
+                                                <option value="Naagavamsam" style="user-select: auto;">Naagavamsam
+                                                </option>
+                                                <option value="Nadar" style="user-select: auto;">Nadar</option>
+                                                <option value="Nagaralu" style="user-select: auto;">Nagaralu</option>
+                                                <option value="Nai" style="user-select: auto;">Nai</option>
+                                                <option value="Naicker" style="user-select: auto;">Naicker</option>
+                                                <option value="Naidu" style="user-select: auto;">Naidu</option>
+                                                <option value="Naik" style="user-select: auto;">Naik</option>
+                                                <option value="Naik/Nayaka" style="user-select: auto;">Naik/Nayaka
+                                                </option>
+                                                <option value="Naika" style="user-select: auto;">Naika</option>
+                                                <option value="Nair Vaniya" style="user-select: auto;">Nair Vaniya
+                                                </option>
+                                                <option value="Nair Vilakkithala" style="user-select: auto;">Nair
+                                                    Vilakkithala</option>
+                                                <option value="Namasudra" style="user-select: auto;">Namasudra</option>
+                                                <option value="Nambiar" style="user-select: auto;">Nambiar</option>
+                                                <option value="Namboodiri" style="user-select: auto;">Namboodiri
+                                                </option>
+                                                <option value="Namosudra" style="user-select: auto;">Namosudra</option>
+                                                <option value="Napit" style="user-select: auto;">Napit</option>
+                                                <option value="Nath" style="user-select: auto;">Nath</option>
+                                                <option value="Nayaka" style="user-select: auto;">Nayaka</option>
+                                                <option value="Neeli" style="user-select: auto;">Neeli</option>
+                                                <option value="Nepali" style="user-select: auto;">Nepali</option>
+                                                <option value="Nhavi" style="user-select: auto;">Nhavi</option>
+                                                <option value="OBC/Barber/Naayee" style="user-select: auto;">
+                                                    OBC/Barber/Naayee</option>
+                                                <option value="Oriya" style="user-select: auto;">Oriya</option>
+                                                <option value="Oswal" style="user-select: auto;">Oswal</option>
+                                                <option value="Otari" style="user-select: auto;">Otari</option>
+                                                <option value="Padmasali" style="user-select: auto;">Padmasali</option>
+                                                <option value="Padmashali" style="user-select: auto;">Padmashali
+                                                </option>
+                                                <option value="Pal" style="user-select: auto;">Pal</option>
+                                                <option value="Panchal" style="user-select: auto;">Panchal</option>
+                                                <option value="Pandaram" style="user-select: auto;">Pandaram</option>
+                                                <option value="Panicker" style="user-select: auto;">Panicker</option>
+                                                <option value="Parkava Kulam" style="user-select: auto;">Parkava Kulam
+                                                </option>
+                                                <option value="Parsi" style="user-select: auto;">Parsi</option>
+                                                <option value="Partraj" style="user-select: auto;">Partraj</option>
+                                                <option value="Pasi" style="user-select: auto;">Pasi</option>
+                                                <option value="Paswan" style="user-select: auto;">Paswan</option>
+                                                <option value="Patel" style="user-select: auto;">Patel</option>
+                                                <option value="Patel Desai" style="user-select: auto;">Patel Desai
+                                                </option>
+                                                <option value="Patel Dodia" style="user-select: auto;">Patel Dodia
+                                                </option>
+                                                <option value="Patel Kadva" style="user-select: auto;">Patel Kadva
+                                                </option>
+                                                <option value="Patel Leva" style="user-select: auto;">Patel Leva
+                                                </option>
+                                                <option value="Pathare Prabhu" style="user-select: auto;">Pathare Prabhu
+                                                </option>
+                                                <option value="Patil" style="user-select: auto;">Patil</option>
+                                                <option value="Patil Leva" style="user-select: auto;">Patil Leva
+                                                </option>
+                                                <option value="Patnaick" style="user-select: auto;">Patnaick</option>
+                                                <option value="Patnaick/Sistakaranam" style="user-select: auto;">
+                                                    Patnaick/Sistakaranam</option>
+                                                <option value="Patra" style="user-select: auto;">Patra</option>
+                                                <option value="Perika" style="user-select: auto;">Perika</option>
+                                                <option value="Pillai" style="user-select: auto;">Pillai</option>
+                                                <option value="Poosala" style="user-select: auto;">Poosala</option>
+                                                <option value="Porwal" style="user-select: auto;">Porwal</option>
+                                                <option value="Prajapati" style="user-select: auto;">Prajapati</option>
+                                                <option value="Raigar" style="user-select: auto;">Raigar</option>
+                                                <option value="Rajaka" style="user-select: auto;">Rajaka</option>
+                                                <option value="Rajastani" style="user-select: auto;">Rajastani</option>
+                                                <option value="Rajbhar" style="user-select: auto;">Rajbhar</option>
+                                                <option value="Rajbonshi" style="user-select: auto;">Rajbonshi</option>
+                                                <option value="Rajput Rohella/Tank" style="user-select: auto;">Rajput
+                                                    Rohella/Tank</option>
+                                                <option value="Ramdasia" style="user-select: auto;">Ramdasia</option>
+                                                <option value="Ramgariah" style="user-select: auto;">Ramgariah</option>
+                                                <option value="Ravidasia" style="user-select: auto;">Ravidasia</option>
+                                                <option value="Rawat" style="user-select: auto;">Rawat</option>
+                                                <option value="Reddy" style="user-select: auto;">Reddy</option>
+                                                <option value="Relli" style="user-select: auto;">Relli</option>
+                                                <option value="Rohiri Sindhi" style="user-select: auto;">Rohiri Sindhi
+                                                </option>
+                                                <option value="Sadgope" style="user-select: auto;">Sadgope</option>
+                                                <option value="Saha" style="user-select: auto;">Saha</option>
+                                                <option value="Sahiti Sindhi" style="user-select: auto;">Sahiti Sindhi
+                                                </option>
+                                                <option value="Sahu" style="user-select: auto;">Sahu</option>
+                                                <option value="Saini" style="user-select: auto;">Saini</option>
+                                                <option value="Sakkhar Sindhi" style="user-select: auto;">Sakkhar Sindhi
+                                                </option>
+                                                <option value="Saliya" style="user-select: auto;">Saliya</option>
+                                                <option value="Saurashtra" style="user-select: auto;">Saurashtra
+                                                </option>
+                                                <option value="Savji" style="user-select: auto;">Savji</option>
+                                                <option value="Scheduled Tribe" style="user-select: auto;">Scheduled
+                                                    Tribe</option>
+                                                <option value="Sehwani Sindhi" style="user-select: auto;">Sehwani Sindhi
+                                                </option>
+                                                <option value="Senai Thalaivar" style="user-select: auto;">Senai
+                                                    Thalaivar</option>
+                                                <option value="Senguntha Mudaliyar" style="user-select: auto;">Senguntha
+                                                    Mudaliyar</option>
+                                                <option value="Sepahia" style="user-select: auto;">Sepahia</option>
+                                                <option value="Setti Balija" style="user-select: auto;">Setti Balija
+                                                </option>
+                                                <option value="Settibalija" style="user-select: auto;">Settibalija
+                                                </option>
+                                                <option value="Shah" style="user-select: auto;">Shah</option>
+                                                <option value="Shetty" style="user-select: auto;">Shetty</option>
+                                                <option value="Shikarpuri Sindhi" style="user-select: auto;">Shikarpuri
+                                                    Sindhi</option>
+                                                <option value="Shimpi" style="user-select: auto;">Shimpi</option>
+                                                <option value="Sindhi" style="user-select: auto;">Sindhi</option>
+                                                <option value="Sindhi-Amil" style="user-select: auto;">Sindhi-Amil
+                                                </option>
+                                                <option value="Sindhi-Baibhand" style="user-select: auto;">
+                                                    Sindhi-Baibhand</option>
+                                                <option value="Sindhi-Bhanusali" style="user-select: auto;">
+                                                    Sindhi-Bhanusali</option>
+                                                <option value="Sindhi-Bhatia" style="user-select: auto;">Sindhi-Bhatia
+                                                </option>
+                                                <option value="Sindhi-Chhapru" style="user-select: auto;">Sindhi-Chhapru
+                                                </option>
+                                                <option value="Sindhi-Dadu" style="user-select: auto;">Sindhi-Dadu
+                                                </option>
+                                                <option value="Sindhi-Hyderabadi" style="user-select: auto;">
+                                                    Sindhi-Hyderabadi</option>
+                                                <option value="Sindhi-Larai" style="user-select: auto;">Sindhi-Larai
+                                                </option>
+                                                <option value="Sindhi-Larkana" style="user-select: auto;">Sindhi-Larkana
+                                                </option>
+                                                <option value="Sindhi-Lohana" style="user-select: auto;">Sindhi-Lohana
+                                                </option>
+                                                <option value="Sindhi-Rohiri" style="user-select: auto;">Sindhi-Rohiri
+                                                </option>
+                                                <option value="Sindhi-Sahiti" style="user-select: auto;">Sindhi-Sahiti
+                                                </option>
+                                                <option value="Sindhi-Sakkhar" style="user-select: auto;">Sindhi-Sakkhar
+                                                </option>
+                                                <option value="Sindhi-Sehwani" style="user-select: auto;">Sindhi-Sehwani
+                                                </option>
+                                                <option value="Sindhi-Shikarpuri" style="user-select: auto;">
+                                                    Sindhi-Shikarpuri</option>
+                                                <option value="Sindhi-Thatai" style="user-select: auto;">Sindhi-Thatai
+                                                </option>
+                                                <option value="SKP" style="user-select: auto;">SKP</option>
+                                                <option value="Somvanshi" style="user-select: auto;">Somvanshi</option>
+                                                <option value="Sonar" style="user-select: auto;">Sonar</option>
+                                                <option value="Soni" style="user-select: auto;">Soni</option>
+                                                <option value="Sourashtra" style="user-select: auto;">Sourashtra
+                                                </option>
+                                                <option value="Sozhiya Vellalar" style="user-select: auto;">Sozhiya
+                                                    Vellalar</option>
+                                                <option value="Srisayana" style="user-select: auto;">Srisayana</option>
+                                                <option value="Srisayani" style="user-select: auto;">Srisayani</option>
+                                                <option value="Sugali (Naika)" style="user-select: auto;">Sugali (Naika)
+                                                </option>
+                                                <option value="Sunari" style="user-select: auto;">Sunari</option>
+                                                <option value="Sundhi" style="user-select: auto;">Sundhi</option>
+                                                <option value="Sutar" style="user-select: auto;">Sutar</option>
+                                                <option value="Suthar" style="user-select: auto;">Suthar</option>
+                                                <option value="Swakula Sali" style="user-select: auto;">Swakula Sali
+                                                </option>
+                                                <option value="Swarnakar" style="user-select: auto;">Swarnakar</option>
+                                                <option value="Tamboli" style="user-select: auto;">Tamboli</option>
+                                                <option value="Tamil" style="user-select: auto;">Tamil</option>
+                                                <option value="Tamil Yadava" style="user-select: auto;">Tamil Yadava
+                                                </option>
+                                                <option value="Tanti" style="user-select: auto;">Tanti</option>
+                                                <option value="Tantubai" style="user-select: auto;">Tantubai</option>
+                                                <option value="Tantuway" style="user-select: auto;">Tantuway</option>
+                                                <option value="Telaga" style="user-select: auto;">Telaga</option>
+                                                <option value="Teli" style="user-select: auto;">Teli</option>
+                                                <option value="Telugu" style="user-select: auto;">Telugu</option>
+                                                <option value="Thakkar" style="user-select: auto;">Thakkar</option>
+                                                <option value="Thakore" style="user-select: auto;">Thakore</option>
+                                                <option value="Thakur" style="user-select: auto;">Thakur</option>
+                                                <option value="Thatai Sindhi" style="user-select: auto;">Thatai Sindhi
+                                                </option>
+                                                <option value="Thigala" style="user-select: auto;">Thigala</option>
+                                                <option value="Thiyya" style="user-select: auto;">Thiyya</option>
+                                                <option value="Tili" style="user-select: auto;">Tili</option>
+                                                <option value="Togata" style="user-select: auto;">Togata</option>
+                                                <option value="Tonk Kshatriya" style="user-select: auto;">Tonk Kshatriya
+                                                </option>
+                                                <option value="Turupu Kapu" style="user-select: auto;">Turupu Kapu
+                                                </option>
+                                                <option value="Udayar" style="user-select: auto;">Udayar</option>
+                                                <option value="Uppara" style="user-select: auto;">Uppara</option>
+                                                <option value="Urali Gounder" style="user-select: auto;">Urali Gounder
+                                                </option>
+                                                <option value="Urs" style="user-select: auto;">Urs</option>
+                                                <option value="Vada Balija" style="user-select: auto;">Vada Balija
+                                                </option>
+                                                <option value="Vadagalai" style="user-select: auto;">Vadagalai</option>
+                                                <option value="Vaddera" style="user-select: auto;">Vaddera</option>
+                                                <option value="Vaish" style="user-select: auto;">Vaish</option>
+                                                <option value="Vaishnav" style="user-select: auto;">Vaishnav</option>
+                                                <option value="Vaishnav Bhatia" style="user-select: auto;">Vaishnav
+                                                    Bhatia</option>
+                                                <option value="Vaishnav Vania" style="user-select: auto;">Vaishnav Vania
+                                                </option>
+                                                <option value="Vaishnav Vanik" style="user-select: auto;">Vaishnav Vanik
+                                                </option>
+                                                <option value="Vaishnava" style="user-select: auto;">Vaishnava</option>
+                                                <option value="Vaishya" style="user-select: auto;">Vaishya</option>
+                                                <option value="Vaishya Vani" style="user-select: auto;">Vaishya Vani
+                                                </option>
+                                                <option value="Valluvan" style="user-select: auto;">Valluvan</option>
+                                                <option value="Valmiki" style="user-select: auto;">Valmiki</option>
+                                                <option value="Vania" style="user-select: auto;">Vania</option>
+                                                <option value="Vaniya" style="user-select: auto;">Vaniya</option>
+                                                <option value="Vanjara" style="user-select: auto;">Vanjara</option>
+                                                <option value="Vanjari" style="user-select: auto;">Vanjari</option>
+                                                <option value="Vankar" style="user-select: auto;">Vankar</option>
+                                                <option value="Vannar" style="user-select: auto;">Vannar</option>
+                                                <option value="Vannia Kula Kshatriyar" style="user-select: auto;">Vannia
+                                                    Kula Kshatriyar</option>
+                                                <option value="Vanniyar" style="user-select: auto;">Vanniyar</option>
+                                                <option value="Variar" style="user-select: auto;">Variar</option>
+                                                <option value="Varshney" style="user-select: auto;">Varshney</option>
+                                                <option value="Veera Saivam" style="user-select: auto;">Veera Saivam
+                                                </option>
+                                                <option value="Veerashaiva" style="user-select: auto;">Veerashaiva
+                                                </option>
+                                                <option value="Velaan/Vellalar" style="user-select: auto;">
+                                                    Velaan/Vellalar</option>
+                                                <option value="Velama" style="user-select: auto;">Velama</option>
+                                                <option value="Vellalar" style="user-select: auto;">Vellalar</option>
+                                                <option value="Vellalar Devandra Kula" style="user-select: auto;">
+                                                    Vellalar Devandra Kula</option>
+                                                <option value="Veluthedathu Nair" style="user-select: auto;">
+                                                    Veluthedathu Nair</option>
+                                                <option value="Vettuva Gounder" style="user-select: auto;">Vettuva
+                                                    Gounder</option>
+                                                <option value="Vilakkithala Nair" style="user-select: auto;">
+                                                    Vilakkithala Nair</option>
+                                                <option value="Vishwakarma" style="user-select: auto;">Vishwakarma
+                                                </option>
+                                                <option value="Viswabrahmin" style="user-select: auto;">Viswabrahmin
+                                                </option>
+                                                <option value="Vokkaliga" style="user-select: auto;">Vokkaliga</option>
+                                                <option value="Vysya" style="user-select: auto;">Vysya</option>
+                                                <option value="Yellapu" style="user-select: auto;">Yellapu</option>
+                                                <option value="Shia" style="user-select: auto;">Shia</option>
+                                                <option value="Sunni" style="user-select: auto;">Sunni</option>
+                                                <option value="Others" style="user-select: auto;">Others</option>
+                                                <option value="Catholic" style="user-select: auto;">Catholic</option>
+                                                <option value="Orthodox" style="user-select: auto;">Orthodox</option>
+                                                <option value="Protestant" style="user-select: auto;">Protestant
+                                                </option>
+                                                <option value="Others" style="user-select: auto;">Others</option>
+                                                <option value="Sikh - Ahluwalia" style="user-select: auto;">Sikh -
+                                                    Ahluwalia</option>
+                                                <option value="Sikh - Arora" style="user-select: auto;">Sikh - Arora
+                                                </option>
+                                                <option value="Sikh - Bhatia" style="user-select: auto;">Sikh - Bhatia
+                                                </option>
+                                                <option value="Sikh - Bhatra" style="user-select: auto;">Sikh - Bhatra
+                                                </option>
+                                                <option value="Sikh - Clean Shaven" style="user-select: auto;">Sikh -
+                                                    Clean Shaven</option>
+                                                <option value="Sikh - Ghumar" style="user-select: auto;">Sikh - Ghumar
+                                                </option>
+                                                <option value="Sikh - Gursikh" style="user-select: auto;">Sikh - Gursikh
+                                                </option>
+                                                <option value="Sikh - Intercaste" style="user-select: auto;">Sikh -
+                                                    Intercaste</option>
+                                                <option value="Sikh - Jat" style="user-select: auto;">Sikh - Jat
+                                                </option>
+                                                <option value="Sikh - Kamboj" style="user-select: auto;">Sikh - Kamboj
+                                                </option>
+                                                <option value="Sikh - Kesadhari" style="user-select: auto;">Sikh -
+                                                    Kesadhari</option>
+                                                <option value="Sikh - Khatri" style="user-select: auto;">Sikh - Khatri
+                                                </option>
+                                                <option value="Sikh - Kshatriya" style="user-select: auto;">Sikh -
+                                                    Kshatriya</option>
+                                                <option value="Sikh - Lubana" style="user-select: auto;">Sikh - Lubana
+                                                </option>
+                                                <option value="Sikh - Majabi" style="user-select: auto;">Sikh - Majabi
+                                                </option>
+                                                <option value="Sikh - Others" style="user-select: auto;">Sikh - Others
+                                                </option>
+                                                <option value="Sikh - Rajput" style="user-select: auto;">Sikh - Rajput
+                                                </option>
+                                                <option value="Sikh - Ramdasia" style="user-select: auto;">Sikh -
+                                                    Ramdasia</option>
+                                                <option value="Sikh - Ramgharia" style="user-select: auto;">Sikh -
+                                                    Ramgharia</option>
+                                                <option value="Sikh - Ravidasia" style="user-select: auto;">Sikh -
+                                                    Ravidasia</option>
+                                                <option value="Sikh - Saini" style="user-select: auto;">Sikh - Saini
+                                                </option>
+                                                <option value="Sikh - Tonk Kshatriya" style="user-select: auto;">Sikh -
+                                                    Tonk Kshatriya</option>
+                                                <option value="Digambar" style="user-select: auto;">Digambar</option>
+                                                <option value="Jain-Others" style="user-select: auto;">Jain-Others
+                                                </option>
+                                                <option value="Shewetamber" style="user-select: auto;">Shewetamber
+                                                </option>
+                                                <option value="Sonam" style="user-select: auto;">Sonam</option>
+                                                <option value="Nitin Balaso Patila" style="user-select: auto;">Nitin
+                                                    Balaso Patila</option>
+                                                <option value="ss" style="user-select: auto;">ss</option>
+                                                <option value="Others" style="user-select: auto;">Others</option>
+                                                <option value="bramhin" style="user-select: auto;">bramhin</option>
+                                                <option value="Gujarati Lohana" style="user-select: auto;">Gujarati
+                                                    Lohana</option>
+                                                <option value="Holar" style="user-select: auto;">Holar</option>
+                                                <option value="Brahmin" style="user-select: auto;">Brahmin</option>
+                                                <option value="fgfgf" style="user-select: auto;">fgfgf</option>
+                                            </select>
+                                            <span style="user-select: auto;"></span>
+                                        </div>
+                                        <div class="styled-input form-group col-md-2 register-form"
+                                            style="user-select: auto;">
+                                            <input type="submit" name="submit" value="Search Partner"
+                                                class="btn btn-primary blog-button mt-4" style="user-select: auto;">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

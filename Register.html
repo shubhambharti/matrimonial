@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <style> 
+      #datepicker{width:250px;} 
+      #datepicker > span:hover{cursor: pointer;}
+      #firm1Age{cursor: pointer;} 
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <section class="vh-50" style="background-color: #9A616D;">
+        <div class="container py-5 vh-50">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+              <div class="card" style="border-radius: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-6 col-lg-5 d-none d-md-block">
+                    <img src="assets/img/img1.webp"
+                      alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; max-width: 100%; height: 100%;" />
+                  </div>
+                  <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                    <div class="card-body p-4 p-lg-5 text-black">
+      
+                      <form>
+      
+                        <div class="d-flex align-items-center mb-3 pb-1">
+                          <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                          <span class="h1 fw-bold mb-0">Logo</span>
+                        </div>
+      
+                        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Register yourself</h5>
+      
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form1Email" class="form-control form-control-lg" />
+                          <label class="form-label" for="form1Email">Full Name</label>
+                        </div>
+
+                        <div class="form-outline mb-4 row">
+                          <label class="form-label col-5 ms-3" for="form1Age">Age</label>
+                          <div id="datepicker" class="input-group date col-5" data-date-format="mm-dd-yyyy"> 
+                            
+                            <input class="form-control form-control-lg" id="form1Age" type="text" /> 
+                            <span class="input-group-addon"> 
+                              <i class="fa-solid fa-calendar-days" style="color: #ff6219;"></i>
+                            </span> 
+                            
+                          </div> 
+                        </div>
+
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form1Email" class="form-control form-control-lg" />
+                          <label class="form-label" for="form1Email">Email address</label>
+                        </div>
+      
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form1Password" class="form-control form-control-lg" />
+                          <label class="form-label" for="form1Password">Password</label>
+                        </div>
+                        <div class="row mb-2">
+                          <div class="col-5 ms-3"><fieldset class="form-group">
+                            <div class="row">
+                              <legend class="col-form-label col-sm-4 pt-0 ">Gender</legend>
+                              <div class="col-sm-8">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                  <label class="form-check-label" for="gridRadios1">
+                                    Male
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                  <label class="form-check-label" for="gridRadios2">
+                                    Female
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+                                  <label class="form-check-label" for="gridRadios3">
+                                    Transgender
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset></div>
+                          <div class="col-5">
+                            <fieldset class="form-group">
+                            <div class="row">
+                              <legend class="col-form-label col-sm-4 pt-0 ">Intrest</legend>
+                              <div class="col-sm-8">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="gridRadio" id="gridRadios4" value="option1" checked>
+                                  <label class="form-check-label" for="gridRadios1">
+                                    Male
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="gridRadio" id="gridRadios5" value="option2">
+                                  <label class="form-check-label" for="gridRadios2">
+                                    Female
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="gridRadio" id="gridRadios6" value="option3" >
+                                  <label class="form-check-label" for="gridRadios3">
+                                    Transgender
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset></div>
+
+                        </div>
+                        
+      
+                        <div class="pt-1 mb-4">
+                          <button class="btn btn-dark btn-lg btn-block" type="button" onclick="location.href='index.html';">Register</button>
+                        </div>
+      
+                        <p class="mb-2 pb-lg-1" style="color: #393f81;">Already have an account, <a href="Login.html"
+                            style="color: #393f81;">Sign in</a></p>
+                        <a href="#!" class="small text-muted">Terms of use.</a>
+                        <a href="#!" class="small text-muted">Privacy policy</a>
+                      </form>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+      integrity= 
+  "sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+      crossorigin="anonymous"> 
+  </script> 
+  <script> 
+      $(function () { 
+          $("#datepicker").datepicker({  
+              autoclose: true,  
+              todayHighlight: true,
+          }).datepicker('update', new Date()); 
+      }); 
+  </script> 
+  <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"> 
+  </script> 
+    </body>
+
+</html>
